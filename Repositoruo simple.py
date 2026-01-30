@@ -12,6 +12,13 @@ def dividir(a, b):
         return "Error: división por cero"
     return a / b
 
+# NUEVAS FUNCIONES MUY SIMPLES
+def potencia(a, b):
+    return a ** b
+
+def modulo(a, b):
+    return a % b
+
 
 if __name__ == "__main__":
     print("Calculadora Simple")
@@ -19,8 +26,10 @@ if __name__ == "__main__":
     print("2. Restar")
     print("3. Multiplicar")
     print("4. Dividir")
+    print("5. Potencia")
+    print("6. Módulo")
 
-    opcion = input("Elige una opción (1-4): ")
+    opcion = input("Elige una opción (1-6): ")
 
     a = float(input("Primer número: "))
     b = float(input("Segundo número: "))
@@ -33,6 +42,10 @@ if __name__ == "__main__":
         print("Resultado:", multiplicar(a, b))
     elif opcion == "4":
         print("Resultado:", dividir(a, b))
+    elif opcion == "5":
+        print("Resultado:", potencia(a, b))
+    elif opcion == "6":
+        print("Resultado:", modulo(a, b))
     else:
         print("Opción inválida")
-        
+
